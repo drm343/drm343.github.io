@@ -149,7 +149,13 @@ Error message and password prompt
 
 <li>$:/config/DefaultSidebarTab</li>
 
+<li>$:/config/Manager/Show</li>
+
+<li>$:/config/Manager/Sort</li>
+
 <li>$:/config/Manager/System</li>
+
+<li>$:/config/Manager/Tag</li>
 
 <li>$:/config/MissingLinks</li>
 
@@ -168,6 +174,8 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
 
 <li>$:/config/RelinkOnRename</li>
 
@@ -231,6 +239,8 @@ Error message and password prompt
 
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/highlight--1712857611</li>
 
+<li>$:/state/showeditpreview</li>
+
 <li>$:/state/ShowPaletteEditor</li>
 
 <li>$:/state/sidebar</li>
@@ -259,7 +269,11 @@ Error message and password prompt
 
 <li>$:/state/tab/sidebar--595412856</li>
 
+<li>$:/state/tag-manager/日誌</li>
+
 <li>$:/state/tag-manager/編輯中</li>
+
+<li>$:/state/tag-manager/ch1: Ada 的基本介紹</li>
 
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
@@ -487,13 +501,33 @@ Error message and password prompt
 
 <li>$:/view</li>
 
+<li>1: Ada 的基本介紹</li>
+
+<li>1.1: Ada 特性</li>
+
+<li>1.2: 參考實作</li>
+
+<li>1.3: 基本結構</li>
+
+<li>1.3.1: procedure</li>
+
+<li>1.4: 範例程式碼</li>
+
+<li>日誌</li>
+
 <li>首頁</li>
 
 <li>章節</li>
 
-<li>新條目</li>
+<li>屬性: 範圍區間</li>
 
-<li>ch1: Ada 的基本介紹</li>
+<li>basic.adb</li>
+
+<li>ch1 code</li>
+
+<li>hello.adb</li>
+
+<li>range_example.adb</li>
 
 </ul>
 </p>
@@ -521,8 +555,17 @@ Error message and password prompt
 <div created="20200724034805018" creator="Yulin" modified="20200724085243779" modifier="Yulin" title="$:/config/DefaultSidebarTab">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20200724084147417" creator="Yulin" modified="20200724084150576" modifier="Yulin" title="$:/config/Manager/System">
+<div created="20200730183353545" creator="Yulin" modified="20200730183355843" modifier="Yulin" title="$:/config/Manager/Show">
+<pre>tiddlers</pre>
+</div>
+<div created="20200730183344578" creator="Yulin" modified="20200730183347661" modifier="Yulin" title="$:/config/Manager/Sort">
+<pre>type</pre>
+</div>
+<div created="20200724084147417" creator="Yulin" modified="20200730183335660" modifier="Yulin" title="$:/config/Manager/System">
 <pre>system</pre>
+</div>
+<div created="20200730183313094" creator="Yulin" modified="20200730194332040" modifier="Yulin" title="$:/config/Manager/Tag">
+<pre></pre>
 </div>
 <div created="20200724085319873" creator="Yulin" modified="20200724085343314" modifier="Yulin" title="$:/config/MissingLinks">
 <pre>yes</pre>
@@ -542,17 +585,20 @@ Error message and password prompt
 <div modified="20200724142853286" modifier="Yulin" title="$:/config/NewTiddler/Tags">
 <pre></pre>
 </div>
-<div created="20200724031529993" creator="Yulin" modified="20200724031529993" modifier="Yulin" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all">
-<pre>show</pre>
+<div created="20200724031529993" creator="Yulin" modified="20200730175849535" modifier="Yulin" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all">
+<pre>hide</pre>
 </div>
-<div created="20200724034404603" creator="Yulin" modified="20200724034404603" modifier="Yulin" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen">
-<pre>show</pre>
+<div created="20200724034404603" creator="Yulin" modified="20200730175856966" modifier="Yulin" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen">
+<pre>hide</pre>
 </div>
 <div created="20200724025217757" modified="20200724025217757" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
-<div created="20200724140623357" creator="Yulin" modified="20200724140632629" modifier="Yulin" title="$:/config/RelinkOnRename">
-<pre>no</pre>
+<div created="20200730175838430" creator="Yulin" modified="20200730175838430" modifier="Yulin" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
+<pre>show</pre>
+</div>
+<div created="20200724140623357" creator="Yulin" modified="20200730194526393" modifier="Yulin" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div created="20200724085248456" creator="Yulin" modified="20200724085252084" modifier="Yulin" title="$:/config/TextEditor/EnableToolbar">
 <pre>yes</pre>
@@ -9960,7 +10006,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>下列條目已被導入：
 
-# [[lambda-extend.h]]</pre>
+# [[range_example.adb]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -13815,10 +13861,13 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
 <div created="20200724055543510" creator="Yulin" modified="20200724055622326" modifier="Yulin" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/highlight--1712857611">
 <pre>contents</pre>
 </div>
+<div created="20200730142500782" creator="Yulin" modified="20200730183814387" modifier="Yulin" title="$:/state/showeditpreview">
+<pre>yes</pre>
+</div>
 <div created="20200724034704777" creator="Yulin" modified="20200724034704777" modifier="Yulin" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20200724035442311" creator="Yulin" modified="20200724084515338" modifier="Yulin" title="$:/state/sidebar">
+<div created="20200724035442311" creator="Yulin" modified="20200730195916920" modifier="Yulin" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200724030944457" creator="Yulin" modified="20200724030944457" modifier="Yulin" title="$:/state/tab--1498284803">
@@ -13854,11 +13903,17 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
 <div created="20200724140734304" creator="Yulin" modified="20200724140734304" modifier="Yulin" title="$:/state/tab-678672049">
 <pre>$:/core/ui/TiddlerInfo/Tools</pre>
 </div>
-<div created="20200724015305610" creator="Yulin" modified="20200724142842202" modifier="Yulin" title="$:/state/tab/sidebar--595412856">
+<div created="20200724015305610" creator="Yulin" modified="20200730194322628" modifier="Yulin" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
+</div>
+<div created="20200730152752390" creator="Yulin" modified="20200730194353698" modifier="Yulin" title="$:/state/tag-manager/日誌">
+<pre>closed</pre>
 </div>
 <div created="20200724143003663" creator="Yulin" modified="20200724143003663" modifier="Yulin" title="$:/state/tag-manager/編輯中">
 <pre>open</pre>
+</div>
+<div created="20200730194410603" creator="Yulin" modified="20200730194415622" modifier="Yulin" title="$:/state/tag-manager/ch1: Ada 的基本介紹">
+<pre>closed</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
@@ -13866,7 +13921,7 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
 <div created="20200724030831353" creator="Y" modified="20200724030832848" modifier="Yuli" title="$:/status/UserName">
 <pre>Yulin</pre>
 </div>
-<div created="20200724143132305" creator="Yulin" list="首頁 [[ch1: Ada 的基本介紹]] 新條目" modified="20200724143138064" modifier="Yulin" title="$:/StoryList">
+<div created="20200730195937043" creator="Yulin" list="首頁 [[1.2: 參考實作]] [[1.3.1: procedure]] [[1.3: 基本結構]]" modified="20200730195959066" modifier="Yulin" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200724030944457" creator="Yulin" modified="20200724030944457" modifier="Yulin" title="$:/temp/advancedsearch">
@@ -13885,7 +13940,7 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///home/erlin/Documents/ada-tutorial/index.html&quot;
+            &quot;text&quot;: &quot;file:///home/erlin/Software/source/drm343.github.io/index.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -13905,7 +13960,7 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/home/erlin/Documents/ada-tutorial/index.html&quot;
+            &quot;text&quot;: &quot;/home/erlin/Software/source/drm343.github.io/index.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -13917,11 +13972,11 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1920&quot;
+            &quot;text&quot;: &quot;1440&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1080&quot;
+            &quot;text&quot;: &quot;810&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -13930,7 +13985,7 @@ var hljs=function(){&quot;use strict&quot;;function e(n){Object.freeze(n);var t=
     }
 }</pre>
 </div>
-<div created="20200724031827306" creator="Yulin" modified="20200724142541379" modifier="Yulin" title="$:/temp/NewTagName">
+<div created="20200724031827306" creator="Yulin" modified="20200730195137647" modifier="Yulin" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20200724030032338" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20200724030032338" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -14883,7 +14938,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200724025342581" creator="Yulin" modified="20200724053918652" modifier="Yulin" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>high</pre>
 </div>
-<div created="20200724031616149" creator="Yulin" modified="20200724142840295" modifier="Yulin" title="$:/temp/search">
+<div created="20200724031616149" creator="Yulin" modified="20200730195921603" modifier="Yulin" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200724053939083" creator="Yulin" modified="20200724053939083" modifier="Yulin" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
@@ -15015,7 +15070,56 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200724034304345" creator="Yulin" modified="20200724034330340" modifier="Yulin" title="$:/view">
 <pre>classic</pre>
 </div>
-<div author="Yulin" created="20200724031029539" creator="Yulin" modified="20200724143122879" modifier="Yulin" title="首頁">
+<div color="#ff0000" created="20200724054101871" creator="Yulin" list="" modified="20200730194618462" modifier="Yulin" tags="章節" title="1: Ada 的基本介紹">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc &quot;1: Ada 的基本介紹&quot;&gt;&gt;
+&lt;/div&gt;</pre>
+</div>
+<div color="#5aff67" created="20200730190625809" creator="Yulin" modified="20200730195301166" modifier="Yulin" tags="[[1: Ada 的基本介紹]]" title="1.1: Ada 特性">
+<pre>* [[屬性: 範圍區間]]</pre>
+</div>
+<div author="" created="20200730183453312" creator="Yulin" modified="20200730195513347" modifier="Yulin" tags="[[1: Ada 的基本介紹]]" title="1.2: 參考實作">
+<pre>!!! 這邊以 gnat 為參考實作，目前整個 Ada 的規範也以 gnat 實作為參考依據。
+
+!!! 規範不要求一個檔案只能有一個 compilation unit，但 gnat 實作上強制一個檔案只能有一個跟檔案同名的 compilation unit。
+
+!!! 在 Ada 中，程式進入點稱為 main subprogram，根據定義以及實作，一隻 Ada 程式的進入點可能不只一個。
+
+!!! 如果 main subprogram 有參數，理論上應該跳過不執行，然而實際行為由實作決定，gnat 不會將有參數的 main subprogram 編成執行檔，只有不帶參數的 [[procedure|1.3.1: procedure]] 跟 function 能夠編譯成執行檔。</pre>
+</div>
+<div color="#5aff67" created="20200730142615143" creator="Yulin" modified="20200730195606074" modifier="Yulin" tags="[[1: Ada 的基本介紹]]" title="1.3: 基本結構">
+<pre>參考程式碼 [[basic.adb]]
+
+!!! Ada 的任何程式區塊都由 begin 開始，end 結束。
+!!! begin 根據區塊用途，關鍵字可能會不同。
+!!! 在 begin 之前必須描述區塊功能，例如宣告接下來的區塊是程序 [[procedure|1.3.1: procedure]]、函數 function 或區塊用途 if case 等等。
+
+!!! 結束區塊必須使用 end 表示結束。
+!!! 如果結束的區塊是程序或函數，可以加上區塊名稱來輔助辨識，例如 end basic; 或是 end hello; 等等。
+!!! 如果結束的區塊不是程序或函數，必須加上用途名稱，例如 end if; 或是 end case; 等等。</pre>
+</div>
+<div created="20200730143954292" creator="Yulin" modified="20200730195725721" modifier="Yulin" tags="[[1.3: 基本結構]]" title="1.3.1: procedure">
+<pre>參考程式碼 [[hello.adb]]
+
+!!! procedure 是一種 compilation unit。
+
+!!! 如果需要回傳計算結果，則''應該''使用 function。
+
+!!! 可能存在只允許使用 procedure 做為程式進入點的[[實作|1.2: 參考實作]]，能不能使用 function 做為進入點由實作決定。
+
+!!! 在 is 跟 begin 之間是宣告區，可以用來宣告變數、procedure 或是 function。
+
+!!! begin 跟 end 之間只能描述行為。</pre>
+</div>
+<div created="20200730152219629" creator="Yulin" modified="20200730195041456" modifier="Yulin" tags="[[1: Ada 的基本介紹]]" title="1.4: 範例程式碼">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc &quot;ch1 code&quot;&gt;&gt;
+&lt;/div&gt;</pre>
+</div>
+<div created="20200730194352457" creator="Yulin" icon="" modified="20200730194352457" modifier="Yulin" title="日誌">
+<pre></pre>
+</div>
+<div author="Yulin" created="20200724031029539" creator="Yulin" modified="20200730194826042" modifier="Yulin" title="首頁">
 <pre>專門介紹 Ada 這個程式語言相關的資料
 
 &lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -15025,13 +15129,79 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div color="#ff0000" created="20200724143033182" creator="Yulin" modified="20200724143033820" modifier="Yulin" title="章節">
 <pre></pre>
 </div>
-<div created="20200724140739494" creator="Yulin" modified="20200724154438168" modifier="Yulin" tags="[[ch1: Ada 的基本介紹]]" title="新條目">
-<pre>測試</pre>
+<div created="20200730193838082" creator="Yulin" modified="20200730194748959" modifier="Yulin" tags="[[1.1: Ada 特性]]" title="屬性: 範圍區間">
+<pre>!!! 區間預設的起始值為 1，而不是常見程式語言的 0-based index。
+
+!!! 可以自行指定區間的起始值，而不是 1-based index。
+
+!!! 綜上所述，當需要用到區間時，盡量使用屬性值的 [['range、'first 跟 'last|range_example.adb]] 取得變數區間，而不要直接寫死數值，避免程式錯誤。</pre>
 </div>
-<div color="#ff0000" created="20200724054101871" creator="Yulin" modified="20200724143106054" modifier="Yulin" tags="章節" title="ch1: Ada 的基本介紹">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc &quot;ch1: Ada 的基本介紹&quot;&gt;&gt;
-&lt;/div&gt;</pre>
+<div created="20200730152016299" creator="Yulin" modified="20200730183437319" modifier="Yulin" tags="source adb [[ch1 code]]" title="basic.adb" type="text/x-adasrc">
+<pre>```Ada
+-- 程序名稱必須跟檔案名稱相同
+
+procedure Basic is -- 這個區塊是一個叫做 basic 的程序
+begin -- 由此開始
+    null;
+end Basic; -- 由此結束
+```
+Ref: [[基本結構]]</pre>
+</div>
+<div color="#d9ae16" created="20200730152635489" creator="Yulin" modified="20200730152640041" modifier="Yulin" title="ch1 code">
+<pre></pre>
+</div>
+<div created="20200730163239474" creator="Yulin" modified="20200730182747107" modifier="Yulin" tags="[[ch1 code]] adb source" title="hello.adb" type="text/x-adasrc">
+<pre>```Ada
+-- with 用來引入需要的工具，使用時必須包含 namespace
+-- use 代表省略 namespace
+with Ada.Text_IO;      use Ada.Text_IO;
+with Ada.Command_Line; use Ada.Command_Line;
+
+procedure Hello is
+    procedure Say_Hello_To (Name : String) is
+    begin
+        Put (&quot;hello &quot;);
+        Put_Line (Name);
+    end Hello_Name;
+begin
+    if Argument_Count = 1 then
+        Hello_Name (Argument (1));
+    else
+        Put_Line (&quot;You need a name!&quot;);
+        Put_Line (&quot;./hello name&quot;);
+    end if;
+end; -- procedure 在結束時，程序名稱可寫可不寫，寫了可以幫助辨識區塊範圍
+```
+
+Ref: [[procedure]]</pre>
+</div>
+<div created="20200730193450967" creator="Yulin" modified="20200730193550521" modifier="Yulin" tags="adb source [[ch1 code]]" title="range_example.adb" type="text/x-adasrc">
+<pre>```Ada
+with Ada.Text_IO;
+use  Ada.Text_IO;
+
+procedure Range_Example is
+    type Range_2_Based is array (Positive range 2 .. 4) of Integer;
+    ARR : Range_2_Based := (3, 5, 7);
+begin
+&lt;&lt;example_1&gt;&gt;
+    Put_Line (&quot;example 1&quot;);
+    for Index in 2 .. 4 loop
+        Put_Line (Integer'image (ARR (Index)));
+    end loop;
+
+&lt;&lt;example_2&gt;&gt;
+    Put_Line (&quot;example 2&quot;);
+    for Index in ARR'first .. ARR'last loop
+        Put_Line (Integer'image (ARR (Index)));
+    end loop;
+
+&lt;&lt;example_3&gt;&gt;
+    Put_Line (&quot;example 3&quot;);
+    for Index in ARR'range loop
+        Put_Line (Integer'image (ARR (Index)));
+    end loop;
+end;</pre>
 </div>
 
 
