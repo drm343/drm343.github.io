@@ -201,6 +201,10 @@ Error message and password prompt
 
 <li>$:/state/Excise/--1830720823/type</li>
 
+<li>$:/state/Excise/--424236707/tagnew</li>
+
+<li>$:/state/Excise/--424236707/type</li>
+
 <li>$:/state/Excise/--436227406/tagnew</li>
 
 <li>$:/state/Excise/--6988045/tagnew</li>
@@ -253,6 +257,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>手動編隊</li>
+
 <li>直線列隊</li>
 
 <li>首頁</li>
@@ -263,6 +269,8 @@ Error message and password prompt
 
 <li>環狀列隊</li>
 
+<li>autogroup: 自動編隊</li>
+
 <li>Commander: 指揮官</li>
 
 <li>Construction Plates: 次級工廠</li>
@@ -270,6 +278,8 @@ Error message and password prompt
 <li>Debris: 碎屑</li>
 
 <li>factory: 工廠</li>
+
+<li>group: 編隊</li>
 
 <li>Metal Extractor: 採礦器</li>
 
@@ -14550,6 +14560,12 @@ Error message and password prompt
 <div created="20210316130133597" modified="20210316130133597" title="$:/state/Excise/--1830720823/type">
 <pre>link</pre>
 </div>
+<div created="20210324155824238" modified="20210324155824238" title="$:/state/Excise/--424236707/tagnew">
+<pre>yes</pre>
+</div>
+<div created="20210324155831819" modified="20210324155831819" title="$:/state/Excise/--424236707/type">
+<pre>link</pre>
+</div>
 <div created="20210313142442590" modified="20210313142442590" title="$:/state/Excise/--436227406/tagnew">
 <pre>yes</pre>
 </div>
@@ -14613,13 +14629,13 @@ Error message and password prompt
 <div created="20210313130241709" modified="20210313131417862" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/DownloadSaver</pre>
 </div>
-<div created="20210313115812346" modified="20210316130156185" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20210313115812346" modified="20210324155542256" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210316125951135" list="首頁" modified="20210316140620348" title="$:/StoryList">
+<div created="20210324155412501" list="操作與戰術 [[group: 編隊]] [[autogroup: 自動編隊]] 手動編隊" modified="20210324161205981" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -14731,6 +14747,12 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20210324155832801" modified="20210324163535385" tags="[[group: 編隊]]" title="手動編隊">
+<pre>* 使用「 ''ctrl + 數字''」將所選單位編成一個隊伍。
+* 點擊數字鍵能指揮對應的隊伍。
+* 選擇單位後，使用「''shift + 數字''」可以將所選單位跟指定編隊一起指揮。(未開啟 shift 自動合併編隊的狀態)
+* 進階選單可以設定 shift 編隊自動合併，選擇單位後使用「''shift + 數字''」會自動將選擇的單位編入指定部隊，不需要再用 ctrl 進行編隊。</pre>
+</div>
 <div created="20210316130140779" modified="20210316141430528" tags="操作與戰術" title="直線列隊">
 <pre>''用法與特性''
 
@@ -14781,10 +14803,12 @@ Error message and password prompt
 
 幾乎所有戰鬥單位射擊時都會產生子彈，根據子彈碰撞結果計算傷害。</pre>
 </div>
-<div created="20210316102804455" modified="20210316142739028" tags="首頁" title="操作與戰術">
+<div created="20210316102804455" modified="20210324155711562" tags="首頁" title="操作與戰術">
 <pre>Zero-K 不像一般 rts 有預設固定陣型。
 
 會根據指令以及修正鍵做出排列。
+
+[[編隊|group: 編隊]]
 
 [[直線列隊]]
 
@@ -14817,6 +14841,15 @@ Error message and password prompt
 
 容易擋到友軍射擊線。</pre>
 </div>
+<div created="20210324161155858" modified="20210324163212282" tags="[[group: 編隊]]" title="autogroup: 自動編隊">
+<pre>使用自動編隊功能後，單位生產完成並完成第一個行動後，就會自動加入編隊中，除非清除自動編隊設定，否則一旦設定過，下一場遊戲會沿用上一場的設定。
+
+* 使用「''alt + 數字''」將所選兵種加入自動編隊中。
+* 使用「''alt + ~''」將所選兵種移出自動編隊功能。
+* 設定選單「使用 escape 打開」預設為簡單模式，可以點擊 simple mode 來切換成進階模式，進階模式可以指定單位是否繼承工廠的編隊。
+* 在繼承的狀況下，只要將工廠加入編隊，接下來所生產的單位都會加入這個編隊。
+* 繼承工廠編隊跟自動編隊都啟動的狀況下，單位最後的編隊號碼會採用自動編隊。</pre>
+</div>
 <div created="20210313131712270" modified="20210313135659928" tags="遊戲機制" title="Commander: 指揮官">
 <pre>本身等於一個[[倉庫|Storage: 倉庫]]。
 
@@ -14848,6 +14881,13 @@ Error message and password prompt
 原本需要花費 800 單位金屬才能建造，目前版本只要 700 單位金屬。
 
 v1.8.8.2 新增一種叫做 [[Construction Plates|Construction Plates: 次級工廠]] 的次級工廠，必須在主工廠 420 單位距離內才能建造。</pre>
+</div>
+<div created="20210324155531655" modified="20210324161209242" tags="操作與戰術" title="group: 編隊">
+<pre>除了傳統 RTS 的手動編隊，遊戲也內建自動編隊的功能。
+
+[[手動編隊]]
+
+[[自動編隊|autogroup: 自動編隊]]</pre>
 </div>
 <div created="20210313142510082" modified="20210313142801795" tags="[[metal spots: 金屬產生點]]" title="Metal Extractor: 採礦器">
 <pre>在[[金屬產生點|metal spots: 金屬產生點]]上建造採礦器即可獲得金屬。
